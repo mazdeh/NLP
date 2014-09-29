@@ -1,0 +1,5 @@
+# Vahid Mazdeh
+
+A pattern I noticed after checking a few sentences from the Treebank corpus against the language model was that when there were a lot of UNK's in a sentence (usually where the sentence contained a lot of nouns), perplexity was much lower, meaning that the LM was doing much better. 
+
+The reason why, I believe, was because the vocabulary set of our training corpus has a lot of UNK's and that means, our methods are going to give a very high probability to UNK's, resulting in lower PP’s, since PP is an inverse function of the probability sequence.
